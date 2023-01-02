@@ -7,8 +7,11 @@ return require('packer').startup(function(use)
 	use 'catppuccin/nvim'
 	use 'rose-pine/neovim'
 
+	use 'nvim-tree/nvim-tree.lua'
+
 	use 'nvim-telescope/telescope-file-browser.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
+	use 'nvim-treesitter/playground'
 	use 'ThePrimeagen/harpoon'
 	use {
 		'nvim-telescope/telescope.nvim',
@@ -38,4 +41,12 @@ return require('packer').startup(function(use)
 			{'rafamadriz/friendly-snippets'},
 		}
 	}
+
+	use 'terrortylor/nvim-comment'
+
+	use 'lukoshkin/trailing-whitespace'
+
+	use 'stevearc/dressing.nvim'
+
+	use 'lukas-reineke/indent-blankline.nvim'
 end)
